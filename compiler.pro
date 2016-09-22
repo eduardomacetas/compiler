@@ -25,4 +25,4 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui
 
 DISTFILES += \
-    resources/symbolstable.txt
+    resources/symbols_table.txt

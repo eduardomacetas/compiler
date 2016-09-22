@@ -1,19 +1,14 @@
 #include "mainwindow.h"
 #include <QApplication>
-#include <iostream>
-#include <string>
-using namespace std;
+#include "symbols_table.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    symbols_table * tb= new symbols_table();
+    tb->read();
+    tb->print_table();
     MainWindow w;
-    string b = "peru";
-    for(auto i:b)
-    {
-        cout<<i<<endl;
-    }
     w.show();
-    cout<<"hola Mica"<<endl;
     return a.exec();
 }
