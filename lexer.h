@@ -1,15 +1,5 @@
 /*
-    lexer.h
-*/
-#ifndef LEXER_H
-#define LEXER_H
-
-
-class lexer{
-public:
-    lexer();
-
-    /*
+    	lexer.h
      recursos:
      tabla de simboslos,
      automatas,
@@ -19,10 +9,16 @@ public:
 
      resultados:
      bufer de tokens XD
+*/
+#ifndef LEXER_H
+#define LEXER_H
 
 
+class lexer{
+public:
+    lexer();
 
-    */
+
 
 };
 
