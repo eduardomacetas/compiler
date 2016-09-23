@@ -9,6 +9,8 @@
 
      resultados:
      bufer de tokens XD
+
+     ...
 */
 #ifndef LEXER_H
 #define LEXER_H
