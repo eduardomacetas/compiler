@@ -15,7 +15,8 @@ void main_yonel(){
     cout<<"-------------"<<endl;
 
     lexer lx;
-    lx.fn("hola mundo");
+    lx.fn("int main(){return 0;}");
+
 
 
     cout<<"-------------"<<endl;
