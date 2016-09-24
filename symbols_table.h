@@ -22,6 +22,7 @@ public:
     void read();
     void print_table();
     my_hash* get_table();
+    string get_token(string p);
 };
 
 #endif // SYMBOLS_TABLE_H

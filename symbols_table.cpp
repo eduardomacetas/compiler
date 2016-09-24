@@ -28,7 +28,7 @@ void symbols_table::read()
 
 void symbols_table::print_table()
 {
-    for (auto& x: *table)
+    for (auto & x:*table)
         cout << x.first << ": " << x.second << endl;
     cout<< "total:"<<table->size()<<endl;
 }
@@ -37,5 +37,16 @@ void symbols_table::print_table()
  */
 my_hash* symbols_table::get_table()
 {
-   return table;
+    return table;
+}
+
+string symbols_table::get_token(string p)
+{
+    string rpta;
+    auto it = table->find(p);
+    if(it==table->end())
+        rpta="token_unkwon";
+    else
+        rpta=it->second;
+    return rpta;
 }
