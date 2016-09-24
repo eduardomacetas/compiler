@@ -1,6 +1,11 @@
+/*
+	clase main
+*/
+
 #include "mainwindow.h"
 #include <QApplication>
 #include "symbols_table.h"
+
 
 int main(int argc, char *argv[])
 {
