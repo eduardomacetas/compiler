@@ -44,7 +44,6 @@ class lexer{
                 }
             }
             cout<<"|"<<cad.substr(i,n)<<"|"<<endl;
-            cout<<"buscar token tux buscar_t_sim(cad.substr(i,n))"<<endl;
             buffer_tokens.push_back("tipo  buscar_t_sim(cad.substr(i,n))" );
         }
 
