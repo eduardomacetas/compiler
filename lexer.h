@@ -17,14 +17,16 @@
 
 #include <vector>
 #include <iostream>
+#include "symbols_table.h"
 using namespace std;
 
 class lexer{
     private:
+
         vector<string> buffer_tokens;
     public:
         lexer();
-        void  fn(string cad);
+        void  tokenizer(string cad);
 
 
 
