@@ -15,8 +15,8 @@ void main_yonel(){
     cout<<"-------------"<<endl;
 
     lexer lx;
-    lx.tokenizer("()[]{}{;}");
-
+    //lx.tokenizer("int main(){return 0;}");
+    lx.tokenizer("uno dos tres");
 
 
     cout<<"-------------"<<endl;
