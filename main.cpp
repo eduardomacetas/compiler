@@ -13,7 +13,7 @@ using namespace std;
 
 void main_yonel(){
     cout<<"-------------"<<endl;
-    string cad = "int vec[10];";
+    string cad = "int main(){return 0;}";
     cout<<"cadena:  ||"<<cad<<"||"<<endl;
 
     lexer lx;
