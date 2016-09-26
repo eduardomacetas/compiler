@@ -808,7 +808,8 @@ main.o: main.cpp mainwindow.h \
 		../../../Qt5.7.0/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		../../../Qt5.7.0/5.7/gcc_64/include/QtGui/qguiapplication.h \
 		../../../Qt5.7.0/5.7/gcc_64/include/QtGui/qinputmethod.h \
-		symbols_table.h
+		symbols_table.h \
+		lexer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -971,7 +972,8 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 compiler.o: compiler.cpp compiler.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o compiler.o compiler.cpp
 
-lexer.o: lexer.cpp lexer.h
+lexer.o: lexer.cpp lexer.h \
+		symbols_table.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o lexer.o lexer.cpp
 
 symbols_table.o: symbols_table.cpp symbols_table.h
