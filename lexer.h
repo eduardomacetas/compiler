@@ -22,12 +22,16 @@ using namespace std;
 
 class lexer{
     private:
-
+        symbols_table st;
         vector<string> buffer_tokens;
+    private:
+        bool is_null_token(string token);
+
     public:
         lexer();
-        void  tokenizer(string cad);
-
+        void tokenizer(string cad);
+        vector<string> get_buffer_tokens();
+        void print_buffer_tokens();
 
 
 

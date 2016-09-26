@@ -13,11 +13,12 @@ using namespace std;
 
 void main_yonel(){
     cout<<"-------------"<<endl;
+    string cad = "int vec[10];";
+    cout<<"cadena:  ||"<<cad<<"||"<<endl;
 
     lexer lx;
-    //lx.tokenizer("int main(){return 0;}");
-    lx.tokenizer("uno dos tres");
-
+    lx.tokenizer(cad);
+    lx.print_buffer_tokens();
 
     cout<<"-------------"<<endl;
 }
