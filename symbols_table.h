@@ -23,6 +23,7 @@ public:
     void print_table();
     my_hash* get_table();
     string get_token(string p);
+    bool is(string p);
 };
 
 #endif // SYMBOLS_TABLE_H

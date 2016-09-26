@@ -12,6 +12,8 @@ continue keyword
 return keyword
 goto keyword
 ; semicolon
+( bracket_open
+) bracket_close
 { curlybrace_open
 } curlybrace_close
 // slcomment

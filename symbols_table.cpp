@@ -4,6 +4,7 @@ symbols_table::symbols_table()
 {
     table= new my_hash;
     file_name="../compiler/resources/symbols_table.txt";
+    this->read();
 }
 
 /*
@@ -49,4 +50,12 @@ string symbols_table::get_token(string p)
     else
         rpta=it->second;
     return rpta;
+}
+
+bool symbols_table::is(string p)
+{
+    auto it = table->find(p);  // -_-
+    if(it==table->end())
+        return false;
+    return true;
 }
