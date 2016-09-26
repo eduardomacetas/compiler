@@ -50,3 +50,10 @@ string symbols_table::get_token(string p)
         rpta=it->second;
     return rpta;
 }
+
+bool symbols_table::is(string p)
+{
+    if(it==table->end())
+        return false;
+    return true;
+}
