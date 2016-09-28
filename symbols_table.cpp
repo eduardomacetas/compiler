@@ -98,8 +98,8 @@ bool symbols_table::is_identifier( string cadena){
                 r=false;
                 return r;
             }
-            r=true;
         }
+        r=true;
     }else{
         r= false;
     }

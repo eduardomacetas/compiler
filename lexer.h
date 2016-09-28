@@ -29,6 +29,7 @@ class lexer{
 
     public:
         lexer();
+        lexer(string source_code);
         void tokenizer(string cad);
         vector<string> get_buffer_tokens();
         void print_buffer_tokens();
