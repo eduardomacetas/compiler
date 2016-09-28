@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     main_yonel();
 
 
-    //interfaz
+    //---interfaz
     //QApplication a(argc, argv);
     //MainWindow w;
     //w.show();
