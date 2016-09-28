@@ -30,7 +30,7 @@
      <item>
       <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>PushButton</string>
+        <string>run</string>
        </property>
       </widget>
      </item>
@@ -59,7 +59,7 @@
      <x>0</x>
      <y>0</y>
      <width>673</width>
-     <height>21</height>
+     <height>19</height>
     </rect>
    </property>
   </widget>

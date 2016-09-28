@@ -26,12 +26,12 @@ void main_yonel(){
 
 int main(int argc, char *argv[])
 {
-    main_yonel();
+    //main_yonel();
 
 
     //---interfaz
-    //QApplication a(argc, argv);
-    //MainWindow w;
-    //w.show();
-    //return a.exec();
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }

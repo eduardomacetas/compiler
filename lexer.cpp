@@ -15,6 +15,7 @@ void  lexer::tokenizer(string cad){
     for(auto c:cad){
         ++cont;
         ++n;
+        if( int(c)==10 ){ i=cont; n=0; }/*control de salto de lineas*/
         if( c==' ' || st.is(cc+c) ){
             if(c==' '){
                 subcad = cad.substr(i,n-1);

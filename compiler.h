@@ -12,8 +12,11 @@ class compiler{
         string source_code;
 
     public:
+        compiler();
         compiler(string code);
         string get_source_code();
+        void set_source_code(string code);
+        void run();
 
     public: /* functions utilities */
         //print .. etc

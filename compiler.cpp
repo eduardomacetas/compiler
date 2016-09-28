@@ -7,6 +7,12 @@
 #include "compiler.h"
 
 
+compiler::compiler(){
+}
+
+compiler::compiler(string code){
+    source_code=code;
+}
 
 /*
  * compilacion
@@ -14,13 +20,20 @@
  * paso 2 ..
  * paso 3 ..
 */
-compiler::compiler(string code){
-    source_code=code;
+void compiler::run(){
     _lexer.tokenizer(source_code);
-    _lexer.print_buffer_tokens();/* solo para ver resultados ... */
+    _lexer.print_buffer_tokens(); /*  */
+
+
+
+
 }
+
 
 string compiler::get_source_code(){
     return source_code;
 }
 
+void compiler::set_source_code(string code){
+    source_code = code;
+}
