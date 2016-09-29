@@ -16,8 +16,8 @@ automata::automata()
 
 void automata::fill_matriz()
 {
-    ((*mat)[0]).push_back(1);
-     ((*mat)[0]).push_back(1);
+        mat->at(0).push_back(1);
+        mat->at(0).push_back(1);
         mat->at(0).push_back(2);
         mat->at(0).push_back(3);
         mat->at(1).push_back(1);
@@ -44,7 +44,7 @@ void automata::print_matriz()
     }
 }
 
-void automata::executar(string a)
+string automata::executar(string a)
 {
     int i=0;
     int e=0; //estado inicial
@@ -54,8 +54,7 @@ void automata::executar(string a)
         tmp=eval(a[i], e);
         if(tmp<0)
         {
-           cout<<"token_desconocido"<<endl;
-           return;
+           return "token_desconocido";
         }
         else
         {
@@ -65,7 +64,7 @@ void automata::executar(string a)
     }
     if(s_accepted[tmp])
     {
-        cout<<f_names[tmp]<<endl;
+        return f_names[tmp];
     }
 }
 

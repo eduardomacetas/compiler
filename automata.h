@@ -6,7 +6,7 @@
 #include <ctype.h>
 #include <cstdio>
 #include <algorithm>
-#define length(x) (sizeof(x)/sizeof(x[0])) // obtenemos size de un array
+//#define length(x) (sizeof(x)/sizeof(x[0])) // obtenemos size de un array
 using namespace std;
 
 typedef vector< vector<int > > matriz;
@@ -26,9 +26,9 @@ public:
     int is_subindent(char c, int a);
     int is_digit(char c, int a);
     int eval(char c, int a);
-    void executar(string a);
+    string executar(string a);
 
-    void (automata::*f0[4])(char,int) const;
+    void (automata::*f0[4])(char,int) const; // vector de punteros a funciones
 
 };
 
